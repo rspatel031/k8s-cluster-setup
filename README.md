@@ -24,7 +24,10 @@ Both setups include detailed instructions and port configurations for various ne
 ## Installation Overview
 
 ### Script 1: Setting Up the Control Plane
-1. Copy the `control-plane.sh` script to your control plane node.
+1. Download the `control-plane.sh` script to your control plane node.
+   ```bash
+   wget https://raw.githubusercontent.com/rspatel031/k8s-cluster-setup/refs/heads/main/control-plane.sh
+   ```
 2. Make the script executable:
    ```bash
    chmod +x control-plane.sh
@@ -48,7 +51,10 @@ The **`worker-node.sh`** script prepares worker nodes and joins them to the clus
 
 ### Steps:
 
-1. Copy the `worker-node.sh` script to your worker node(s).
+1. Download the `worker-node.sh` script to your worker node(s).
+   ```bash
+   wget https://raw.githubusercontent.com/rspatel031/k8s-cluster-setup/refs/heads/main/worker-node.sh
+   ```
 2. Make the script executable:
    ```bash
    chmod +x worker-node.sh
