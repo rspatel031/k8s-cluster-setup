@@ -24,18 +24,24 @@ Both setups include detailed instructions and port configurations for various ne
 ## Installation Overview
 
 ### Script 1: Setting Up the Control Plane
-1. Download the `control-plane.sh` script to your control plane node.
+1. Download the `control-plane.sh` script to your control plane node:
+
    ```bash
    wget https://raw.githubusercontent.com/rspatel031/k8s-cluster-setup/refs/heads/main/control-plane.sh
    ```
+
 2. Make the script executable:
+
    ```bash
    chmod +x control-plane.sh
    ```
+
 3. Run the script:
+
    ```bash
    sudo ./control-plane.sh
-
+   ```
+   
 ### Output:
 At the end of the script, you will receive a **join command** for worker nodes. This is stored at:
 ```bash
@@ -52,21 +58,29 @@ The **`worker-node.sh`** script prepares worker nodes and joins them to the clus
 ### Steps:
 
 1. Download the `worker-node.sh` script to your worker node(s).
+
    ```bash
    wget https://raw.githubusercontent.com/rspatel031/k8s-cluster-setup/refs/heads/main/worker-node.sh
    ```
+
 2. Make the script executable:
+
    ```bash
    chmod +x worker-node.sh
    ```
+
 3. Run the script:
+   
    ```bash
    sudo ./worker-node.sh
    ```
+
 4. Once the script finishes, use the **join command** from the control plane node to connect the worker node to the cluster. For example:
+
    ```bash
    sudo kubeadm join <control-plane-ip>:6443 --token <token> --discovery-token-ca-cert-hash sha256:<hash>
    ```
+
 ---
 
 ## Script Breakdown
@@ -102,14 +116,19 @@ The worker node script:
 Kubernetes requires a network add-on to manage communication between pods. Below are the supported network add-ons with their corresponding configuration files:
 
 - **Calico**:
+
   ```bash
   wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/calico/calico.yaml
   ```
+  
 - **Flannel**:
+
   ```bash
   wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/flannel/flannel.yaml
   ```
+  
 - **Weave**:
+
   ```bash
   wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/weave/weave.yaml
   ```
