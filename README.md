@@ -97,15 +97,15 @@ Kubernetes requires a network add-on to manage communication between pods. Below
 
 - **Calico**:
   ```bash
-  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/calico/calico.yaml
+  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/calico/calico.yaml
   ```
 - **Flannel**:
   ```bash
-  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/flannel/flannel.yaml
+  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/flannel/flannel.yaml
   ```
 - **Weave**:
   ```bash
-  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/weave/weave.yaml
+  wget https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/weave/weave.yaml
   ```
 
 **CIDR Configuration:** All network add-ons mentioned above are preconfigured to use the `10.244.0.0/16` CIDR range.
@@ -148,6 +148,6 @@ Below are the port details required for the cluster to function properly:
 
 ## References
 
-- [Calico Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/calico/calico.yaml)
-- [Flannel Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/flannel/flannel.yaml)
-- [Weave Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addons/refs/heads/main/weave/weave.yaml)
+- [Calico Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/calico/calico.yaml)
+- [Flannel Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/flannel/flannel.yaml)
+- [Weave Configuration](https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/weave/weave.yaml)
