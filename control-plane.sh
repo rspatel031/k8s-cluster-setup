@@ -120,7 +120,7 @@ display_kubeadm_inti_command_output() {
   fancy_echo 33 "==========================================="
 }
 
-complete_setup_banner() {
+setup_completed_banner() {
   fancy_echo 32 "✅ [SUCCESS] Kubernetes setup is complete!"
 }
 
@@ -167,7 +167,7 @@ main() {
   set_crictl_end_point
   deploy_network_addon
   display_kubeadm_inti_command_output
-  complete_setup_banner
+  setup_completed_banner
   setup_kubectl_alias_and_completion
 }
 
