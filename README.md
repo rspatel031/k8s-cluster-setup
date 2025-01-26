@@ -165,7 +165,7 @@ Below are the port details required for the cluster to function properly:
 - Ensure ports are open and accessible between nodes in the cluster.
 - Ensure you use the correct `kubeadm join` command on worker nodes.
 - The scripts are written for Ubuntu and may require modifications for other distributions.
-- The **control-plane** setup also deploys a Weave Net network add-on. You can customize the network plugin if needed.
+- The **control-plane** setup also deploys a Calico network add-on. You can customize the network plugin if needed.
 - Restart nodes if necessary after installation.
 - Use the provided configuration files to deploy any network add-on suitable for your environment.
 
