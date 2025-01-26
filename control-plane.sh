@@ -110,7 +110,7 @@ set_crictl_end_point() {
 # Function to deploy the network add-on
 deploy_network_addon() {
   fancy_echo 32 "🔧 [STEP 10] Deploying network add-on..."
-  kubectl apply -f https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/weave/weave.yaml
+  kubectl apply -f https://raw.githubusercontent.com/rspatel031/k8s-network-addon/refs/heads/main/calico/calico.yaml
 }
 
 # Function to display the kubeadm init command output
